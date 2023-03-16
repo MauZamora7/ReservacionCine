@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CINEGOOD</title>
+    <link rel="stylesheet" href="2.css">
+  </head>
+  <body>
+    <h1>CINE-GOOD</h1>
+    <form id="reservation-form">
+      <h2>Elige tu película</h2>
+      <div>
+        <input type="radio" id="pelicula1" name="pelicula" value="Titanic">
+        <label for="pelicula1">Titanic</label>
+      </div>
+      <div>
+        <input type="radio" id="pelicula2" name="pelicula" value="Creed">
+        <label for="pelicula2">Creed 3</label>
+      </div>
+      <div>
+        <input type="radio" id="pelicula3" name="pelicula" value="Toy Story 2">
+        <label for="pelicula3">Toy Story 2</label>
+      </div>
+      <h2>Elige tu horario</h2>
+      <select id="horario" name="horario">
+        <option value="10">10:00 am</option>
+        <option value="13">1:00 pm</option>
+        <option value="16">4:00 pm</option>
+        <option value="19">7:00 pm</option>
+        <option value="22">10:00 pm</option>
+      </select>
+      <h2>Elige el número de adultos y niños</h2>
+      <div>
+        <label for="numAdultos">Adultos:</label>
+        <input type="number" id="numAdultos" name="numAdultos" min="1" max="4" value="1">
+      </div>
+      <div>
+        <label for="numNinos">Niños:</label>
+        <input type="number" id="numNinos" name="numNinos" min="0" max="4" value="0">
+      </div>
+      <button type="submit">Reservar</button>
+    </form>
+    <div id="ticket"></div>
+    <script src="2.js"></script>
+  </body>
+</html>
+
